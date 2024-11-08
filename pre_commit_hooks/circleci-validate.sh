@@ -12,4 +12,4 @@ if ! command -v circleci &>/dev/null; then
   exit 1
 fi
 
-circleci config validate
+CIRCLECI_CLI_TELEMETRY_OPTOUT=true circleci config validate
